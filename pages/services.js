@@ -22,8 +22,7 @@ animBoxServices();
         <h4>FAISONS UN PEU LE TOUR DE MES SERVICES</h4>
         <h3>Que pourrions-nous réaliser ensemble ?</h3>
         <p>
-          Fort d'une expérience en programmation informatique orienté web de
-          plus de 15 ans, mon domaine de compétence s'étend de la réalisation de
+          Fort d'une expérience en programmation informatique orienté web, mon domaine de compétence s'étend de la réalisation de
           l'identité à l'optimisation de performance (référencement /
           positionnement / vitesse d'affichage).
         </p>
