@@ -27,6 +27,7 @@ animBoxServices();
           positionnement / vitesse d'affichage).
         </p>
       </div>
+      
       <div className="boxServices__Card">
         <div className="card">
           <div className="boxCrossSvg">
