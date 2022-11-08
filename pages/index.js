@@ -9,6 +9,8 @@ import React from "react";
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
+
+
 export default function Home() {
   const [media, setMedia] = React.useState(true);
   useEffect(() => {
@@ -35,6 +37,13 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Romain Marty</title>
+        <meta name='keywords' content='Romain Marty, Développeur Web, Perpignan, agence web, seo, seo perpignan, création site internet perpignan, developpeur web perpignan, développeur web perpignan, création site de site web, référencement Seo, conseil et expertise' />
+        <meta name="description" content="Romain Marty développeur web à Perpignan" />
+        <meta name="google-site-verification" content="wKQIr3RyKhVqdEVcVFaqPTjmqnlM2CsZJ3GP6frWa-M" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="boxMiddle">
         <h2>{text2()}</h2>
         <h3>Full Stack Developer</h3>
