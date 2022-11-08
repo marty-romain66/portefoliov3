@@ -15,6 +15,7 @@ header {
   display: flex;
   background-color: rgba(15, 17, 19, 0.9725490196078431);
   justify-content: space-between;
+  z-index: 1000;
   h1 {
     font-size: 50px;
     font-weight: 700;
@@ -51,15 +52,16 @@ header {
   }
 }
 .boxToggle {
+  margin-top: 110px;
   opacity: 0.99;
   padding: 20px;
-  height: 100vh;
+  height: 50%;
   width: 70%;
   background-color: #1a202c;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 999;
+  z-index: 1000;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 

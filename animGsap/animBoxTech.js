@@ -9,15 +9,14 @@ export default function animBoxTech() {
     ".boxCont",
     {
       opacity: 0,
-      x: "-100%",
+    
     },
     {
       opacity: 1,
-      x: 0,
-      duration: 1,
+     
+  
+      duration: 0.5,
       scrollTrigger: {
-        scrub: 1,
-       
         trigger: ".boxEnd",
         start: "top 50%",
         end: "top 30% ",
@@ -28,17 +27,16 @@ export default function animBoxTech() {
     ".boxCont2",
     {
         opacity: 0,
-        x: "100%",
+     
         },
         {
         opacity: 1,
-        x: 0,
-        duration: 1,
+     
+        duration: 0.5,
         scrollTrigger: {
-            scrub: 1,
   
-            trigger: ".boxEnd",
-            start: "top 50%",
+            trigger: ".boxCont",
+            start: "top 40%",
             end: "top 30% ",
         },
     })

@@ -35,23 +35,23 @@ export default function Header() {
     <>
       {toggle ? (
         <div className="boxToggle" >
-          <div className="boxToggle__card">
-            <a href="" onClick={handleClickH}>
+          <div className="boxToggle__card" onClick={handleClickH}>
+            <a href="#" onClick={handleClickH}>
               Home
             </a>
           </div>
-          <div className="boxToggle__card">
-            <a href="" onClick={handleClickS}>
+          <div className="boxToggle__card"onClick={handleClickS}>
+            <a href="#" onClick={handleClickS}>
               Services
             </a>
           </div>
-          <div className="boxToggle__card">
-            <a href="" onClick={handleClickA}>
+          <div className="boxToggle__card" onClick={handleClickA}>
+            <a href="#" onClick={handleClickA}>
               About
             </a>
           </div>
-          <div className="boxToggle__card">
-            <a href="" onClick={handleClickC}>
+          <div className="boxToggle__card" onClick={handleClickC}>
+            <a href="#" onClick={handleClickC}>
               Contact
             </a>
           </div>

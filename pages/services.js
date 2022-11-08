@@ -1,12 +1,37 @@
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import animBoxServices from "../animGsap/animServices";
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function services() {
-useEffect(() => {
-animBoxServices();
-}, []);
+  useEffect(() => {
+    animBoxServices();
+  }, []);
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      gsap.fromTo(".card",{
+        opacity: 0,
+        y: 100,
+      },{
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 1.5,
+        scrollTrigger: {
+          trigger: ".card",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+          markers: true,
+        },
 
+      })
+    }
+  }, []);
 
   return (
     <div className="boxServices">
@@ -22,12 +47,13 @@ animBoxServices();
         <h4>FAISONS UN PEU LE TOUR DE MES SERVICES</h4>
         <h3>Que pourrions-nous réaliser ensemble ?</h3>
         <p>
-          Fort d'une expérience en programmation informatique orienté web, mon domaine de compétence s'étend de la réalisation de
-          l'identité à l'optimisation de performance (référencement /
-          positionnement / vitesse d'affichage).
+          Fort d'une expérience en programmation informatique orienté web, mon
+          domaine de compétence s'étend de la réalisation de l'identité à
+          l'optimisation de performance (référencement / positionnement /
+          vitesse d'affichage).
         </p>
       </div>
-      
+
       <div className="boxServices__Card">
         <div className="card">
           <div className="boxCrossSvg">
@@ -131,7 +157,6 @@ animBoxServices();
           </p>
         </div>
       </div>
-      
     </div>
   );
 }
