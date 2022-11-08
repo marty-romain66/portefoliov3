@@ -4,6 +4,8 @@
     h3 {
       font-size: 30px;
       font-weight: 700;
+      color: #667eea !important;
+     
     }
     h2 {
       font-size: 50px;
@@ -16,10 +18,16 @@
   }
   .boxServices__2{
     margin: 20px 0;
-padding: 20px;
+padding: 40px;
+h3{
+  font-size: 30px;
+  font-weight: 700;
+  
+}
     h4{
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 700;
+        color: #667eea !important;
     }
   }
   margin-top: 110px;
@@ -38,8 +46,13 @@ padding: 20px;
 }
 
 .card {
+  &:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
   background-color: rgba(26, 32, 44, 0.161);
   padding: 33px;
+  cursor: pointer;
   h5 {
     font-size: 30px;
     font-weight: 700;
@@ -71,6 +84,7 @@ padding: 20px;
     width: 2rem;
     height: 2rem;
     fill: #fff;
+    
   }
 }
 
