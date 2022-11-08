@@ -157,9 +157,23 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 150px;
+ 
 }
+
 @media (max-width: 1000px) {
+    .boxCont{
+        width: 100% !important;
+    }
+    .boxSvg{
+        gap: 0 !important;
+    }
+    .listTech{
+        svg{
+            width: 45px !important;
+            height: 45px !important;
+            border-radius: 0 !important;
+        }
+    }
   footer {
     background-image: none;
     display: flex;
@@ -293,3 +307,22 @@ body {
 h5 {
   color: #667eea !important;
 }
+
+@media screen and (max-width: 350px) {
+  .box {
+    margin-top: 224px !important;
+  }
+  .boxTitle {
+    h1 {
+      font-size: 26px;
+    }
+  }
+  .listTech{
+    margin-top: 126px;
+  }
+  footer{
+    bottom: -460px !important;
+  }
+}
+    
+
